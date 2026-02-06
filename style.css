@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(21, 2, 39);
+    color:white;
+    font-family:'Lucida Console', Courier, monospace;
+    margin-left: 1cm;
+}
+
+@font-face {
+    font-family: 'Departure Mono Regular';
+    src: url(fonts/DepartureMono-Regular.otf)
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+    font-family: 'Departure mono Regular';
+}
+
+.social-icons {
+    margin-bottom: 3cm;
+    margin-left: 10px;
+}
