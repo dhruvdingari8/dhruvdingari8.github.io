@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <h1>My Portfolio</h1>
+    <hr />
+    <h2>About Me</h2>
+    <p>
+      I am Dhruv DIngari, a Computer Engineering and Computer Science student at
+      Northeastern University. Over the past few years at Northeastern and on
+      Co-op, I learned a lot more about different computer engineering and
+      electrical engineering technologies, as well as getting opportunities to
+      utilize them in both personal and professional projects. I had one Co-op
+      at LineVision Inc. in Boston, MA as a Hardware Engineering Co-op, where I
+      primarily worked with developing and deploying field test devices for the
+      company’s upcoming new sensor hardware platform. I am also the
+      Software/Electrical lead of AerospaceNU’s Fixed Wing project, where I not
+      only lead interdisciplinary collaboration efforts with mechanical
+      engineers, but also lead development of a battery management system aimed
+      at managing individual battery cells discharge on large model aircraft and
+      drones.
+    </p>
+    <br />
+    <h2>Projects</h2>
+    <h3>Battery Management System</h3>
+    <p>
+      The Battery Management System is a long term project of the Fixed Wing
+      Project of AerospaceNU, of which I am the electrical and software lead
+      for. The need for the BMS came from being a former Capstone project
+      designed to provide a variable cell balancing and monitoring solution for
+      drones, specifically aimed to manage 3-12 Li-on battery cells. A custom 6
+      layer PCB was designed, printed and assembled, where I took ownership of
+      the design of the 5V regulator in use on the board. The design converts
+      anywhere from 6V to 60V DC voltage from the battery pack, and regulates it
+      to a steady 5V 10A output power to power the motors and peripherals of the
+      drone. I also wrote and designed C firmware to connect the RP2040 MCU chip
+      to the BQ76972 Battery Stack Monitor IC being used to manage the cells.
+      The RP2040 communicates to the BQ IC over SPI to read individual cell
+      voltages, thermistor temperature readings, and other parameters. Right
+      now, the goal is to use this BMS to manage the power on the drone being
+      designed for competing in the University Rover Competition.
+    </p>
+    <h4>Skills learned:</h4>
+    <ul>
+      <li>PCB Design</li>
+      <li>C/C++ Firmware</li>
+      <li>GitHub Project Management</li>
+      <li>Azure DevOps</li>
+    </ul>
+    <br />
+    <h3>LineVision Power Consumption Testing</h3>
+    <p>
+      During my Co-op at LineVision, I had the opportunity to work on the
+      upcoming new sensor platform. Specifically, I owned the test plan and
+      design for the power consumption test of the device. The goal of the test
+      was to measure the power draw of the device over the course of 50 hours,
+      and how long the power duty cycle could be. For this project, I used
+      Python to connect to a Keysight DMM and continuously poll it for current
+      draw. From that, I used Numpy and Pandas to calculate and display the
+      average power draw neatly on a graph. Using the average values calculated
+      from this, I created an algorithm used to determine what the power draw
+      would be over a 24 hour period, given certain duty cycles (i.e. on for 30
+      seconds out of 10 minute intervals). With the maximum duty cycle lengths,
+      the company could move forward with deciding on a specific weather station
+      to use for the eventual final product, as well as firmware limitations on
+      how long specific processes could take per cycle.
+    </p>
+    <h4>Skills learned:</h4>
+    <ul>
+      <li>Python Scripting</li>
+      <li>Data Analysis with Numpy and Pandas</li>
+      <li>Data Visualization with Matplotlib</li>
+      <li>Test Plan Design</li>
+    </ul>
+  </body>
+</html>
